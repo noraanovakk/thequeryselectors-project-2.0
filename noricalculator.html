@@ -22,12 +22,66 @@
 
     <h1>Nóri számológépe</h1>
    <table>
-<tr>
-  <td>
-   <input type="number" id="noriFirstNumberInput" placeholder="Adj meg egy számot" name="noriFirstNumberInput">
-  </td>
-</tr>
-
+    <tr>
+      <td>
+       <input type="number" id="noriFirstNumberInput" placeholder="Adj meg egy számot" name="noriFirstNumberInput">
+      </td>
+      <td>
+        <select name="noriOperationSelec" id="noriOperationSelect">
+          <option value="plus">+</option>
+          <option value="minus">-</option>
+          <option value="multiply">*</option>
+          <option value="divide">/</option>
+        </select>
+      </td>
+      <td>
+        <input type="number" id="noriSecondNumberInput" placeholder="Adj meg egy számot" name="noriSecondNumberInput">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button type="button" onclick="one()" id="numberOne">1</button>
+      </td> 
+      <td>
+        <button type="button" onclick="two()" id="numberTwo">2</button>
+      </td>
+      <td>
+        <button type="button" onclick="three()" id="numberThree">3</button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button type="button" onclick="four()" id="numberFour">4</button>
+      </td>
+      <td>
+        <button type="button" onclick="five()" id="numberFive">5</button>
+      </td>
+      <td>
+        <button type="button" onclick="six()" id="numberSix">6</button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button type="button" onclick="seven()" id="numberSeven">7</button>
+      </td>
+      <td>
+        <button type="button" onclick="eight()" id="numberEight">8</button>
+      </td>
+      <td>
+        <button type="button" onclick="nine()" id="numberNine">9</button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button type="button" onclick="noriReset()" id="noriResetInput">C</button>
+      </td>
+      <td>
+        <button type="button" onclick="zero()" id="numberZero">0</button>
+      </td>
+      <td>
+        <button type="button" onclick="noriCalculate()" id="noriCalculateInput">=</button>
+      </td>
+    </tr>
    </table>
   
 </body>
