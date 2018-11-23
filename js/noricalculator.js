@@ -1,6 +1,5 @@
 var noriNum1 = parseFloat(document.querySelectorAll('.noriNumberInput').value);
 var noriNum2 = parseFloat(document.querySelectorAll('.noriNumberInput').value);
-var noriOperation = document.querySelector('#noriOperationSelect').value;
 
 function noriNumber() {
   document.querySelector('#noriFirstNumberInput').value = noriNum1;
@@ -8,6 +7,7 @@ function noriNumber() {
 }
 
 function noriCalculate() {
+  var noriOperation = document.querySelector('#noriOperationSelect').value;
   if (noriOperation === 'plus') {
     document.querySelector('#noriResultInput').value = noriNum1 + noriNum2;
   }
