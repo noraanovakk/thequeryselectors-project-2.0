@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Renicalculator</title>
+    <style>
+        button {
+            width: 40px;  height: 40px;
+        }
+            </style>
+</head>
+
+<body>
+    <form id="calculatorReni" name="szamologepReni">
+        <h1>Reni számológépe</h1>
+        <table>
+            <tbody>
+                <tr>
+                    <td> <input id="num1Reni" type="number" value="1. szám" style="width: 36px; height: 36px;" readonly></td>
+                    <td>
+                        <select id="operatorReni" style="width: 36px; height: 36px;">
+                            <option value="select"></option>
+                            <option value="+">+</option>
+                            <option value="-">-</option>
+                            <option value="*">x</option>
+                            <option value="/">/</option>
+                            <option value="%">%</option>
+                        </select>
+                    </td>
+                    <td> <input id="num2Reni" type="number" value="2. szám" style="width: 36px; height: 36px;" readonly></td>
+                </tr>
+                <tr>
+                    <td>
+                        <button onclick="oneReni()">1</button>
+                    </td>
+                    <td>
+                        <button onclick="twoReni()">2</button>
+                    </td>
+                    <td>
+                        <button onclick="threeReni()">3</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button onclick="fourReni()">4</button>
+                    </td>
+                    <td>
+                        <button onclick="fiveReni()">5</button>
+                    </td>
+                    <td>
+                        <button onclick="sixReni()">6</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button onclick="sevenReni()">7</button>
+                    </td>
+                    <td>
+                        <button onclick="eightReni()">8</button>
+                    </td>
+                    <td>
+                        <button onclick="nineReni()">9</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button onclick="clearReni()">C</button>
+                    </td>
+                    <td>
+                        <button onclick="nulReni()">0</button>
+                    </td>
+                    <td>
+                        <button onclick="calcReni()">=</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3"><input id="resultReni" type="number" style="width: 125px; height: 36px;" value="az eredmény"
+                            readonly></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+    <script src="./js/Renicalculator.js"></script>
+</body>
+
+</html>
