@@ -30,11 +30,13 @@
                 <input type="number" id="noriFirstNumberInput" placeholder="Adj meg egy számot" name="noriFirstNumberInput">
             </td>
             <td class="num-but">
-                <select name="noriOperationSelec" id="noriOperationSelect">
+                <select name="noriOperationSelect" id="noriOperationSelect">
                     <option value="plus">+</option>
                     <option value="minus">-</option>
                     <option value="multiply">*</option>
                     <option value="divide">/</option>
+                    <option value="power">**</option>
+                    <option value="remdivide">%</option>
                 </select>
             </td>
             <td>
@@ -84,6 +86,8 @@
             <td class="num-but">
                 <input value="=" type="button" onclick="noriCalculate()" id="noriCalculateInput">
             </td>
+        </tr>
+        <tr>
         </tr>
         <tr>
             <td colspan="3" class="num-but">
