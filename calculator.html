@@ -1,94 +1,155 @@
 <!DOCTYPE html>
 <html lang="hu">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Számológépek</title>
-    <link rel="stylesheet" type="text/css" href="css/main.css" media="screen">
-    <link href="https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy" rel="stylesheet">
-</head>
+    <link rel="stylesheet" type="text/css" href="css/main.css" media="screen" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <div class="navigation">
-        <nav class="navbar">
-            <a href="index.html" class="nav-but">Főoldal</a>
-            <a href="group.html" class="nav-but">Csapatunk</a>
-            <a href="contact.html" class="nav-but">Kapcsolat</a>
-            <a href="tananyag.html" class="nav-but">Tananyag</a>
-        </nav>
+      <nav class="navbar">
+        <a href="index.html" class="nav-but">Főoldal</a>
+        <a href="group.html" class="nav-but">Csapatunk</a>
+        <a href="contact.html" class="nav-but">Kapcsolat</a>
+        <a href="tananyag.html" class="nav-but">Tananyag</a>
+      </nav>
     </div>
-    <br>
+    <br />
 
     <h3>Nézzétek meg új, továbbfejlesztett számológépeinket!</h3>
-    <a href="#anci">Ancié</a><br>
-    <a href="#dani">Danié</a><br>
-    <a href="#nori">Nórié</a><br>
-    <a href="#reni">Renié</a><br>
-    <a href="#timi">Timié</a><br>
+    <a href="#anci">Ancié</a><br />
+    <a href="#dani">Danié</a><br />
+    <a href="#nori">Nórié</a><br />
+    <a href="#reni">Renié</a><br />
+    <a href="#timi">Timié</a><br />
 
-    <br>
+    <br />
     <h1 id="anci">Anci Számológép</h1>
-    <br>
-
-
-
-
+    <br />
 
     <h1 id="dani">Dani számológép</h1>
 
-
-    <input type="number" id="daniElsoSzam" placeholder="Szam1" style="width:63px; height:30px; font-size:15px; margin:11px">
-    <select id="muvelet">
-        <option value="default" selected>Művelet</option>
-        <option value="+">+</option>
-        <option value="-">-</option>
-        <option value="*">*</option>
-        <option value="/">/</option>
-        <option value="%">%</option>
-        <option value="**">**</option>
+    <input
+      type="number"
+      id="daniNum1"
+      placeholder="Szam1"
+      style="width:63px; height:30px; font-size:15px; margin:11px"
+    />
+    <select id="daniOperator">
+      <option value="default" selected>Művelet</option>
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="*">*</option>
+      <option value="/">/</option>
+      <option value="%">%</option>
+      <option value="**">**</option>
     </select>
-    <input type="number" id="num2" name="num2" placeholder="Szam2" style="width:63px; height:30px; font-size:15px; margin:11px">
-    <br>
-    <input type="button" value="1" onclick="one()" style="width:55px; height:30px; font-size:20px; margin:15px">
-    <input type="button" value="2" onclick="two()" style="width:55px; height:30px; font-size:20px; margin:15px">
-    <input type="button" value="3" onclick="three()" style="width:55px; height:30px; font-size:20px; margin:15px">
-    <br>
-    <input type="button" value="4" onclick="four()" style="width:55px; height:30px; font-size:20px; margin:15px">
-    <input type="button" value="5" onclick="five()" style="width:55px; height:30px; font-size:20px; margin:15px">
-    <input type="button" value="6" onclick="six()" style="width:55px; height:30px; font-size:20px; margin:15px">
-    <br>
-    <input type="button" value="7" onclick="seven()" style="width:55px; height:30px; font-size:20px; margin:15px">
-    <input type="button" value="8" onclick="eight()" style="width:55px; height:30px; font-size:20px; margin:15px">
-    <input type="button" value="9" onclick="nine()" style="width:55px; height:30px; font-size:20px; margin:15px">
-    <br>
-    <input type="button" value="0" onclick="zero()" style="width:55px; height:30px; font-size:20px; margin:15px">
-    <input type="button" value="C" onclick="C()" style="width:55px; height:30px; font-size:20px; margin:15px">
-    <input type="button" onclick="calculate()" value="=" style="width:55px; height:30px; font-size:20px; margin:15px">
-    <br>
-    <input id="eredmeny" type="number" readonly placeholder="Eredmény" style="width:230px; height:30px; font-size:15px; margin:15px">
+    <input
+      type="number"
+      id="daniNum2"
+      name="num2"
+      placeholder="Szam2"
+      style="width:63px; height:30px; font-size:15px; margin:11px"
+    />
+    <br />
+    <input
+      type="button"
+      value="1"
+      onclick="danInsert(1)"
+      style="width:55px; height:30px; font-size:20px; margin:15px"
+    />
+    <input
+      type="button"
+      value="2"
+      onclick="danInsert(2)"
+      style="width:55px; height:30px; font-size:20px; margin:15px"
+    />
+    <input
+      type="button"
+      value="3"
+      onclick="danInsert(3)"
+      style="width:55px; height:30px; font-size:20px; margin:15px"
+    />
+    <br />
+    <input
+      type="button"
+      value="4"
+      onclick="danInsert(4)"
+      style="width:55px; height:30px; font-size:20px; margin:15px"
+    />
+    <input
+      type="button"
+      value="5"
+      onclick="danInsert(5)"
+      style="width:55px; height:30px; font-size:20px; margin:15px"
+    />
+    <input
+      type="button"
+      value="6"
+      onclick="danInsert(6)"
+      style="width:55px; height:30px; font-size:20px; margin:15px"
+    />
+    <br />
+    <input
+      type="button"
+      value="7"
+      onclick="danInsert(7)"
+      style="width:55px; height:30px; font-size:20px; margin:15px"
+    />
+    <input
+      type="button"
+      value="8"
+      onclick="danInsert(8)"
+      style="width:55px; height:30px; font-size:20px; margin:15px"
+    />
+    <input
+      type="button"
+      value="9"
+      onclick="danInsert(9)"
+      style="width:55px; height:30px; font-size:20px; margin:15px"
+    />
+    <br />
+    <input
+      type="button"
+      value="0"
+      onclick="danInsert(0)"
+      style="width:55px; height:30px; font-size:20px; margin:15px"
+    />
+    <input
+      type="button"
+      value="."
+      onclick="danInsert(.)"
+      style="width:55px; height:30px; font-size:20px; margin:15px"
+    />
+    <input
+      type="button"
+      onclick="daniCalculate()"
+      value="="
+      style="width:55px; height:30px; font-size:20px; margin:15px"
+    />
+    <br />
+    <input
+      id="daniResult"
+      type="number"
+      readonly
+      placeholder="Eredmény"
+      style="width:230px; height:30px; font-size:15px; margin:15px"
+    />
 
-
-
-
-
-
-
-
-
-
-
-
-
-    <br>
+    <br />
     <h1 id="nori">Nóri számológépe</h1>
-    <br>
+    <br />
     <h1 id="reni">Reni számológépe</h1>
-    <br>
+    <br />
     <h1 id="timi">Timi Számológép</h1>
 
     <script src="calculators.js"></script>
-</body>
-
+  </body>
 </html>
