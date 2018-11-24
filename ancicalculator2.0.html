@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Anci számológép</title>
+  <link rel="stylesheet" href="/thequeryselectorsproject2.0/thequeryselectors-project-2.0/anciCalculator.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Anci számológép</h1>
+  </header>
+  <main>
+    <form name="calculator">
+      <input type="text" id="anciNumber1" class="form-text" name="anciNumber1">
+      <select name="anciOperators" id="anciOperators" class="form-text">
+        <option value="empty"> </option>
+        <option value="anciPlus">+</option>
+        <option value="anciMinus">-</option>
+        <option value="anciMultiply">*</option>
+        <option value="anciDivision">/</option>
+        <option value="anciDivisionWithRemainder">%</option>
+        <option value="anciInvolving">**</option>
+      </select>
+      <input type="text" id="anciNumber2" class="form-text" />
+      <br>
+      <input type="button" class="test" id="anciOne" onclick="insert(1)" value="1">
+      <input type="button" class="test" id="anciTwo" onclick="insert(2)" value="2">
+      <input type="button" class="test" id="anciThree" onclick="insert(3)" value="3">
+      <input type="button" class="test" id="anciDecimalPoint" onclick="insert('.')" value=".">
+      <br />
+      <input type="button" class="test" id="anciFour" onclick="insert(4)" value="4">
+      <input type="button" class="test" id="anciFive" onclick="insert(5)" value="5">
+      <input type="button" class="test" id="anciSix" onclick="insert(6)" value="6">
+      <input type="reset" class="test" id="anciClear" value="C">
+      <br />
+      <input type="button" class="test" id="anciSeven" onclick="insert(7)" value="7">
+      <input type="button" class="test" id="anciEight" onclick="insert(8)" value="8">
+      <input type="button" class="test" id="anciNine" onclick="insert(9)" value="9">
+      <input type="button" class="test" id="anciZero" onclick="insert(0)" value="0">
+      <br />
+      <input type="button" class="test" id="anciEqual" onclick="myFunctionEq()" value="=">
+      <input class="form-text" type="text" name="anciResult" id="anciResult">
+    </form>
+  </main>
+  <script src="/thequeryselectorsproject2.0/thequeryselectors-project-2.0/anciCalculator.js"></script>
+</body>
+
+</html>
