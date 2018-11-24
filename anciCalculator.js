@@ -1,19 +1,24 @@
-function insert(num) {
+function anciinsert(num) {
   var anciOpEmp = document.querySelector('#anciOperators').value === 'empty';
   if (anciOpEmp === true) {
-    document.calculator.anciNumber1.value = document.calculator.anciNumber1.value + num;
+    document.calculator.anciNumber1.value =
+      document.calculator.anciNumber1.value + num;
   } else {
-    document.calculator.anciNumber2.value = document.calculator.anciNumber2.value + num;
+    document.calculator.anciNumber2.value =
+      document.calculator.anciNumber2.value + num;
   }
 }
 
-
 function myFunctionEq() {
   var numberInput1 = parseFloat(
-    document.querySelector('#anciNumber1').value, 10);
+    document.querySelector('#anciNumber1').value,
+    10
+  );
 
   var numberInput2 = parseFloat(
-    document.querySelector('#anciNumber2').value, 10);
+    document.querySelector('#anciNumber2').value,
+    10
+  );
 
   var anciOper = document.querySelector('#anciOperators').value;
 
