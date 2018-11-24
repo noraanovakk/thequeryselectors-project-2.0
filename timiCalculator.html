@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/calc.css" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Számológépek</title>
+</head>
+
+<body>
+  <main>
+    <form name="calculator">
+      <input id="tNumOne" name="tNumOne" />
+      <select name="tOperatorz" id="tOperatorz">
+        <option value="empty"> </option>
+        <option value="tPlus">+</option>
+        <option value="tMinus">-</option>
+        <option value="tMultiply">*</option>
+        <option value="tDiv">/</option>
+        <option value="tDWithR">%</option>
+        <option value="tInvo">**</option>
+      </select>
+      <input id="tNumTwo" name="tnumTwo" /> <br>
+      <div>
+        <input type="button" id="tOne" onclick="insert(1)" class="buttonPimp" value="1">
+        <input type="button" id="tTwo" onclick="insert(2)" class="buttonPimp" value="2">
+        <input type="button" id="tThree" onclick="insert(3)" class="buttonPimp" value="3">
+        <input type="button" id="tDecimalPoint" onclick="insert('.')" class="buttonPimp" value=".">
+        <br>
+        <input type="button" id="tFour" onclick="insert(4)" class="buttonPimp" value="4">
+        <input type="button" id="tFive" onclick="insert(5)" class="buttonPimp" value="5">
+        <input type="button" id="tSix" onclick="insert(6)" class="buttonPimp" value="6">
+        <input type="reset" id="tClear" class="buttonPimp" value="C"> <br>
+        <input type="button" id="tSeven" onclick="insert(7)" class="buttonPimp" value="7">
+        <input type="button" id="tEight" onclick="insert(8)" class="buttonPimp" value="8">
+        <input type="button" id="tNine" onclick="insert(9)" class="buttonPimp" value="9">
+        <input type="button" id="tZero" onclick="insert(0)" class="buttonPimp" value="0">
+        <br>
+        <input type="button" id="tEqual" onclick="tSzamol()" class="buttonPimp" value="=">
+      </div>
+      <input name="tResult" id="tResult">
+    </form>
+  </main>
+
+  <script src="./css/calc.css"></script>
+</body>
+
+</html>
