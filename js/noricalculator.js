@@ -1,45 +1,12 @@
-function noriNumber1() {
-  if (document.hasFocus('#noriFirstNumberInput') ) {
-    document.querySelector('#noriFirstNumberInput').value = parseFloat(document.querySelector('#numberOne').value, 10);
-  }
-  if (document.hasFocus('#noriSecondNumberInput') ) {
-    document.querySelector('#noriSecondNumberInput').value = parseFloat(document.querySelector('#numberOne').value, 10);
+function noriNum(num) {
+  var emptyOperation = document.querySelector('#noriOperationSelect').value === 'empty';
+  if (emptyOperation === true) {
+    document.querySelector('#noriFirstNumberInput').value = document.querySelector('#noriFirstNumberInput').value + num;
+  }  else if (emptyOperation === false) {
+    document.querySelector('#noriSecondNumberInput').value = document.querySelector('#noriSecondNumberInput').value + num;
   }
 }
 
-
-function noriNumber2() {
-  if (document.hasFocus('#noriFirstNumberInput') ) {
-    document.querySelector('#noriFirstNumberInput').value = parseFloat(document.querySelector('#numberTwo').value, 10);
-  }
-  if (document.hasFocus('#noriSecondNumberInput') ) {
-    document.querySelector('#noriSecondNumberInput').value = parseFloat(document.querySelector('#numberTwo').value, 10);
-  }
-}
-// function noriNumber1() {
-//   document.querySelector('#noriFirstNumberInput').value = parseFloat(document.querySelector('#numberOne').value, 10);
-// }
-// function noriNumber1() {
-//   document.querySelector('#noriFirstNumberInput').value = parseFloat(document.querySelector('#numberOne').value, 10);
-// }
-// function noriNumber1() {
-//   document.querySelector('#noriFirstNumberInput').value = parseFloat(document.querySelector('#numberOne').value, 10);
-// }
-// function noriNumber1() {
-//   document.querySelector('#noriFirstNumberInput').value = parseFloat(document.querySelector('#numberOne').value, 10);
-// }
-// function noriNumber1() {
-//   document.querySelector('#noriFirstNumberInput').value = parseFloat(document.querySelector('#numberOne').value, 10);
-// }
-// function noriNumber1() {
-//   document.querySelector('#noriFirstNumberInput').value = parseFloat(document.querySelector('#numberOne').value, 10);
-// }
-// function noriNumber1() {
-//   document.querySelector('#noriFirstNumberInput').value = parseFloat(document.querySelector('#numberOne').value, 10);
-// }
-// function noriNumber1() {
-//   document.querySelector('#noriFirstNumberInput').value = parseFloat(document.querySelector('#numberOne').value, 10);
-// }
 function noriCalculate() {
   var noriOperation = document.querySelector('#noriOperationSelect').value;
   if (noriOperation === 'plus') {
@@ -60,4 +27,7 @@ function noriCalculate() {
   if (noriOperation === 'remdivide') {
     document.querySelector('#noriResultInput').value =  parseFloat(document.querySelector('#noriFirstNumberInput').value) %  parseFloat(document.querySelector('#noriSecondNumberInput').value);
   }
+}
+function noriReset() {
+  document.getElementById('noriResetInput').reset();
 }
