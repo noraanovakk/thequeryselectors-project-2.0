@@ -1,4 +1,4 @@
-function insert(num) {
+function tinsert(num) {
   var tUres = document.querySelector('#tOperatorz').value === 'empty';
   if (tUres === true) {
     document.calculator.tNumOne.value = document.calculator.tNumOne.value + num;
