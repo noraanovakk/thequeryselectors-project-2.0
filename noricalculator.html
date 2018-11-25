@@ -24,78 +24,66 @@
 
     <main>
         <h1>Nóri számológépe</h1>
-        <table>
-        <tr>
-            <td>
-                <input type="number" id="noriFirstNumberInput" placeholder="Adj meg egy számot" name="noriFirstNumberInput">
-            </td>
-            <td class="num-but">
-                <select name="noriOperationSelect" id="noriOperationSelect">
-                    <option value="empty" selected> </option>
-                    <option value="plus">+</option>
-                    <option value="minus">-</option>
-                    <option value="multiply">*</option>
-                    <option value="divide">/</option>
-                    <option value="power">**</option>
-                    <option value="remdivide">%</option>
-                </select>
-            </td>
-            <td>
-                <input type="number" id="noriSecondNumberInput" placeholder="Ajd meg egy másik számot" name="noriSecondNumberInput">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <input value="1" type="button" onclick="noriNum(1)" id="numberOne">
-            </td> 
-            <td>
-                <input value="2" type="button" onclick="noriNum(2)" id="numberTwo">
-            </td>
-            <td>
-                <input value="3" type="button" onclick="noriNum(3)" id="numberThree">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <input type="button" onclick="noriNum(4)" id="numberFour" value="4">
-            </td>
-            <td>
-                <input value="5" type="button" onclick="noriNum(5)" id="numberFive">
-            </td>
-            <td>
-                <input value="6" type="button" onclick="noriNum(6)" id="numberSix">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <input value="7" type="button" onclick="noriNum(7)" id="numberSeven">
-            </td>
-            <td>
-                <input value="8" type="button" onclick="noriNum(8)" id="numberEight">
-            </td>
-            <td>
-                <input value="9" type="button" onclick="noriNum(9)" id="numberNine">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <input value="C" type="reset" onclick="noriReset()" id="noriResetInput">
-            </td>
-            <td>
-                <input value="0" type="button" onclick="noriNum(0)" id="numberZero">
-            </td>
-            <td>
-                <input value="=" type="button" onclick="noriCalculate()" id="noriCalculateInput">
-            </td>
-        </tr>
-        <tr>
-        </tr>
-        <tr>
-            <td colspan="3">
+        <form>
+            <input type="number" id="noriFirstNumberInput" name="noriFirstNumberInput" placeholder="Szám1" class="norinuminput">
+            <select name="noriOperationSelect" id="noriOperationSelect" class="norinuminput">
+                <option value="empty" selected> </option>
+                <option value="plus">+</option>
+                <option value="minus">-</option>
+                <option value="multiply">*</option>
+                <option value="divide">/</option>
+                <option value="power">**</option>
+                <option value="remdivide">%</option>
+            </select>
+            <input type="number" id="noriSecondNumberInput" name="noriSecondNumberInput" placeholder="szám2" class="norinuminput">
+            <table class="nori-table">
+                <tr>
+                    <td class="nori-button">
+                        <input value="1" type="button" onclick="noriNum(1)" id="numberOne">
+                    </td> 
+                    <td class="nori-button">
+                        <input value="2" type="button" onclick="noriNum(2)" id="numberTwo">
+                    </td>
+                    <td class="nori-button">
+                        <input value="3" type="button" onclick="noriNum(3)" id="numberThree">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="nori-button">
+                        <input type="button" onclick="noriNum(4)" id="numberFour" value="4">
+                    </td>
+                    <td class="nori-button">
+                        <input value="5" type="button" onclick="noriNum(5)" id="numberFive">
+                    </td>
+                    <td class="nori-button">
+                        <input value="6" type="button" onclick="noriNum(6)" id="numberSix">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="nori-button">
+                        <input value="7" type="button" onclick="noriNum(7)" id="numberSeven">
+                    </td>
+                    <td class="nori-button">
+                        <input  value="8" type="button" onclick="noriNum(8)" id="numberEight">
+                    </td>
+                    <td>
+                        <input value="9" type="button" onclick="noriNum(9)" id="numberNine">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="nori-button">
+                        <button value="C" type="reset" id="noriResetInput">C</button>
+                    </td>
+                    <td class="nori-button">
+                        <input value="0" type="button" onclick="noriNum(0)" id="numberZero">
+                    </td>
+                    <td class="nori-button">
+                        <input value="=" type="button" onclick="noriCalculate()" id="noriCalculateInput">
+                    </td>
+                </tr>
+            </table>
                 <input type="number" id="noriResultInput" name="noriResultInput" placeholder="Eredmény" readonly>
-            </td>
-        </tr>
-    </table>
+        </form>
    </main>
   <script src="js/noricalculator.js"></script>
 </body>

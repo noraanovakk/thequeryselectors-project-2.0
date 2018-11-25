@@ -41,3 +41,13 @@ tr, td, table, .numbers{
   width: 35%;
   margin: auto;
 }
+.nori-button{
+  width: 1em;
+  border-radius: 30%;
+}
+.nori-table{
+  width: 31px;
+}
+.norinuminput{
+  width: 60px;
+}

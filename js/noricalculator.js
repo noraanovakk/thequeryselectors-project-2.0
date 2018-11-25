@@ -28,6 +28,4 @@ function noriCalculate() {
     document.querySelector('#noriResultInput').value =  parseFloat(document.querySelector('#noriFirstNumberInput').value) %  parseFloat(document.querySelector('#noriSecondNumberInput').value);
   }
 }
-function noriReset() {
-  document.getElementById('noriResetInput').reset();
-}
+
