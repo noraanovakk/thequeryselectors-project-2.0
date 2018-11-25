@@ -1,0 +1,77 @@
+nav{
+  width:100vw;
+  font-size: 1.2rem;
+  
+  text-align: center;  
+}
+.navigation{
+  width: 100%;
+  background-color: rgba(19,38,58,.7);
+  line-height: 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.nav-but{
+  padding: 1.3rem;
+  margin: 1.9rem;
+}
+body{
+  background: #bfff80;
+  font-family: 'Sorts Mill Goudy', serif;
+  text-align: center;
+}
+a{
+  text-decoration: none;
+}
+.nav-but{
+text-decoration: none;
+color: white;
+}
+.nav-but:hover{
+  color: #bfff80;
+  transition-duration: .8s;
+  /*font-size: 1.6rem;*/
+}
+.highlight{
+  margin: 3rem;
+}
+tr, td, table, .numbers{
+  
+  width: 35%;
+  margin: auto;
+}
+.nori-button{
+  width: 1em;
+  border-radius: 30%;
+}
+.nori-table{
+  width: 31px;
+}
+.norinuminput{
+  width: 60px;
+}
+.buttonPimp {
+  background-color: rgb(152, 76, 175);
+  border: none;
+  color: white;
+  height: 40px;
+  width: 80px;
+  padding: 5px 5px 5px 5px;
+  margin: 5px 5px 5px;
+}
+.test {
+  background-color: gray;
+  height: 75px;
+  width: 75px;
+  font-size: 30px;
+  margin: 20px auto;
+  border-radius: 10px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.form-text {
+  height: 40px;
+  width: 100px;
+}

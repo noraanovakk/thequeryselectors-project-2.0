@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Számológépek</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" media="screen" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="navigation">
+      <nav class="navbar">
+        <a href="index.html" class="nav-but">Főoldal</a>
+        <a href="group.html" class="nav-but">Csapatunk</a>
+        <a href="contact.html" class="nav-but">Kapcsolat</a>
+        <a href="tananyag.html" class="nav-but">Tananyag</a>
+      </nav>
+    </div>
+    <br />
+
+    <h3>Nézzétek meg új, továbbfejlesztett számológépeinket!</h3>
+    <a href="#anci">Ancié</a><br />
+    <a href="#dani">Danié</a><br />
+    <a href="#nori">Nórié</a><br />
+    <a href="#reni">Renié</a><br />
+    <a href="#timi">Timié</a><br />
+
+    <br />
+    <h1 id="anci">Anci Számológép</h1>
+    <form name="calculator">
+      <input
+        type="text"
+        id="anciNumber1"
+        class="form-text"
+        name="anciNumber1"
+      />
+      <select name="anciOperators" id="anciOperators" class="form-text">
+        <option value="empty"> </option>
+        <option value="anciPlus">+</option>
+        <option value="anciMinus">-</option>
+        <option value="anciMultiply">*</option>
+        <option value="anciDivision">/</option>
+        <option value="anciDivisionWithRemainder">%</option>
+        <option value="anciInvolving">**</option>
+      </select>
+      <input type="text" id="anciNumber2" class="form-text" /> <br />
+      <input
+        type="button"
+        class="test"
+        id="anciOne"
+        onclick="anciinsert(1)"
+        value="1"
+      />
+      <input
+        type="button"
+        class="test"
+        id="anciTwo"
+        onclick="anciinsert(2)"
+        value="2"
+      />
+      <input
+        type="button"
+        class="test"
+        id="anciThree"
+        onclick="anciinsert(3)"
+        value="3"
+      />
+      <input
+        type="button"
+        class="test"
+        id="anciDecimalPoint"
+        onclick="anciinsert('.')"
+        value="."
+      />
+      <br />
+      <input
+        type="button"
+        class="test"
+        id="anciFour"
+        onclick="anciinsert(4)"
+        value="4"
+      />
+      <input
+        type="button"
+        class="test"
+        id="anciFive"
+        onclick="anciinsert(5)"
+        value="5"
+      />
+      <input
+        type="button"
+        class="test"
+        id="anciSix"
+        onclick="anciinsert(6)"
+        value="6"
+      />
+      <input type="reset" class="test" id="anciClear" value="C" /> <br />
+      <input
+        type="button"
+        class="test"
+        id="anciSeven"
+        onclick="anciinsert(7)"
+        value="7"
+      />
+      <input
+        type="button"
+        class="test"
+        id="anciEight"
+        onclick="anciinsert(8)"
+        value="8"
+      />
+      <input
+        type="button"
+        class="test"
+        id="anciNine"
+        onclick="anciinsert(9)"
+        value="9"
+      />
+      <input
+        type="button"
+        class="test"
+        id="anciZero"
+        onclick="anciinsert(0)"
+        value="0"
+      />
+      <br />
+      <input
+        type="button"
+        class="test"
+        id="anciEqual"
+        onclick="myFunctionEq()"
+        value="="
+      />
+      <input class="form-text" type="text" name="anciResult" id="anciResult" />
+    </form>
+    <br />
+
+    <h1 id="dani">Dani számológép</h1>
+
+    <input
+      type="number"
+      id="daniNum1"
+      placeholder="Szam1"
+      style="width:63px; height:30px; font-size:15px; margin:11px"
+    />
+    <select id="daniOperator">
+      <option value="default" selected>Művelet</option>
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="*">*</option>
+      <option value="/">/</option>
+      <option value="%">%</option>
+      <option value="**">**</option>
+    </select>
+    <input
+      type="number"
+      id="daniNum2"
+      name="num2"
+      placeholder="Szam2"
+      style="width:63px; height:30px; font-size:15px; margin:11px"
+    />
+    <br />
+    <input
+      type="button"
+      value="1"
+      onclick="danInsert(1)"
+      style="width:55px; height:30px; font-size:20px; margin:15px"
+    />
+    <input
+      type="button"
+      value="2"
+      onclick="danInsert(2)"
+      style="width:55px; height:30px; font-size:20px; margin:15px"
+    />
+    <input
+      type="button"
+      value="3"
+      onclick="danInsert(3)"
+      style="width:55px; height:30px; font-size:20px; margin:15px"
+    />
+    <br />
+    <input
+      type="button"
+      value="4"
+      onclick="danInsert(4)"
+      style="width:55px; height:30px; font-size:20px; margin:15px"
+    />
+    <input
+      type="button"
+      value="5"
+      onclick="danInsert(5)"
+      style="width:55px; height:30px; font-size:20px; margin:15px"
+    />
+    <input
+      type="button"
+      value="6"
+      onclick="danInsert(6)"
+      style="width:55px; height:30px; font-size:20px; margin:15px"
+    />
+    <br />
+    <input
+      type="button"
+      value="7"
+      onclick="danInsert(7)"
+      style="width:55px; height:30px; font-size:20px; margin:15px"
+    />
+    <input
+      type="button"
+      value="8"
+      onclick="danInsert(8)"
+      style="width:55px; height:30px; font-size:20px; margin:15px"
+    />
+    <input
+      type="button"
+      value="9"
+      onclick="danInsert(9)"
+      style="width:55px; height:30px; font-size:20px; margin:15px"
+    />
+    <br />
+    <input
+      type="button"
+      value="0"
+      onclick="danInsert(0)"
+      style="width:55px; height:30px; font-size:20px; margin:15px"
+    />
+    <input
+      type="button"
+      value="."
+      onclick="danInsert('.')"
+      style="width:55px; height:30px; font-size:20px; margin:15px"
+    />
+    <input
+      type="button"
+      onclick="daniCalculate()"
+      value="="
+      style="width:55px; height:30px; font-size:20px; margin:15px"
+    />
+    <br />
+    <input
+      id="daniResult"
+      type="number"
+      readonly
+      placeholder="Eredmény"
+      style="width:230px; height:30px; font-size:15px; margin:15px"
+    />
+
+    <br />
+    <h1>Nóri számológépe</h1>
+    <form>
+      <input
+        type="number"
+        id="noriFirstNumberInput"
+        name="noriFirstNumberInput"
+        placeholder="Szám1"
+        class="norinuminput"
+      />
+      <select
+        name="noriOperationSelect"
+        id="noriOperationSelect"
+        class="norinuminput"
+      >
+        <option value="empty" selected> </option>
+        <option value="plus">+</option>
+        <option value="minus">-</option>
+        <option value="multiply">*</option>
+        <option value="divide">/</option>
+        <option value="power">**</option>
+        <option value="remdivide">%</option>
+      </select>
+      <input
+        type="number"
+        id="noriSecondNumberInput"
+        name="noriSecondNumberInput"
+        placeholder="szám2"
+        class="norinuminput"
+      />
+      <table class="nori-table">
+        <tr>
+          <td class="nori-button">
+            <input
+              value="1"
+              type="button"
+              onclick="noriNum(1)"
+              id="numberOne"
+            />
+          </td>
+          <td class="nori-button">
+            <input
+              value="2"
+              type="button"
+              onclick="noriNum(2)"
+              id="numberTwo"
+            />
+          </td>
+          <td class="nori-button">
+            <input
+              value="3"
+              type="button"
+              onclick="noriNum(3)"
+              id="numberThree"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td class="nori-button">
+            <input
+              type="button"
+              onclick="noriNum(4)"
+              id="numberFour"
+              value="4"
+            />
+          </td>
+          <td class="nori-button">
+            <input
+              value="5"
+              type="button"
+              onclick="noriNum(5)"
+              id="numberFive"
+            />
+          </td>
+          <td class="nori-button">
+            <input
+              value="6"
+              type="button"
+              onclick="noriNum(6)"
+              id="numberSix"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td class="nori-button">
+            <input
+              value="7"
+              type="button"
+              onclick="noriNum(7)"
+              id="numberSeven"
+            />
+          </td>
+          <td class="nori-button">
+            <input
+              value="8"
+              type="button"
+              onclick="noriNum(8)"
+              id="numberEight"
+            />
+          </td>
+          <td>
+            <input
+              value="9"
+              type="button"
+              onclick="noriNum(9)"
+              id="numberNine"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td class="nori-button">
+            <button value="C" type="reset" id="noriResetInput">C</button>
+          </td>
+          <td class="nori-button">
+            <input
+              value="0"
+              type="button"
+              onclick="noriNum(0)"
+              id="numberZero"
+            />
+          </td>
+          <td class="nori-button">
+            <input
+              value="="
+              type="button"
+              onclick="noriCalculate()"
+              id="noriCalculateInput"
+            />
+          </td>
+        </tr>
+      </table>
+
+      <input
+        type="number"
+        id="noriResultInput"
+        name="noriResultInput"
+        placeholder="Eredmény"
+        readonly
+      />
+    </form>
+
+    <br />
+    <form id="calculatorReni" name="calculatorReni">
+      <h1 id="reni">Reni számológépe</h1>
+      <table>
+        <tbody>
+          <tr>
+            <td>
+              <input
+                id="num1Reni"
+                type="number"
+                style="width: 36px; height: 36px;"
+              />
+            </td>
+            <td>
+              <select id="operatorReni" style="width: 36px; height: 36px;">
+                <option value="selectR">_</option>
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">x</option>
+                <option value="/">/</option>
+                <option value="%">%</option>
+                <option value="**">**</option>
+              </select>
+            </td>
+            <td>
+              <input
+                id="num2Reni"
+                type="number"
+                style="width: 36px; height: 36px;"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="button"
+                id="oneReni"
+                onclick="selectReni(1)"
+                value="1"
+              />
+            </td>
+            <td>
+              <input
+                type="button"
+                id="twoReni"
+                onclick="selectReni(2)"
+                value="2"
+              />
+            </td>
+            <td>
+              <input
+                type="button"
+                id="threeReni"
+                onclick="selectReni(3)"
+                value="3"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="button"
+                id="fourReni"
+                onclick="selectReni(4)"
+                value="4"
+              />
+            </td>
+            <td>
+              <input
+                type="button"
+                id="fiveReni"
+                onclick="selectReni(5)"
+                value="5"
+              />
+            </td>
+            <td>
+              <input
+                type="button"
+                id="sixReni"
+                onclick="selectReni(6)"
+                value="6"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="button"
+                id="sevenReni"
+                onclick="selectReni(7)"
+                value="7"
+              />
+            </td>
+            <td>
+              <input
+                type="button"
+                id="eightReni"
+                onclick="selectReni(8)"
+                value="8"
+              />
+            </td>
+            <td>
+              <input
+                type="button"
+                id="nineReni"
+                onclick="selectReni(9)"
+                value="9"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><input type="reset" id="resetReni" value="C" /></td>
+            <td>
+              <input
+                type="button"
+                id="nulReni"
+                onclick="selectReni(0)"
+                value="0"
+              />
+            </td>
+            <td>
+              <input
+                type="button"
+                id="calculateReni"
+                onclick="calcReni()"
+                value="="
+              />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <input
+                id="resultReni"
+                type="number"
+                style="width: 125px; height: 36px;"
+                readonly
+              />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+    <h1 id="timi">Timi Számológép</h1>
+    <form name="tcalculator">
+      <input id="tNumOne" name="tNumOne" />
+      <select name="tOperatorz" id="tOperatorz">
+        <option value="empty"> </option>
+        <option value="tPlus">+</option>
+        <option value="tMinus">-</option>
+        <option value="tMultiply">*</option>
+        <option value="tDiv">/</option>
+        <option value="tDWithR">%</option>
+        <option value="tInvo">**</option>
+      </select>
+      <input id="tNumTwo" name="tnumTwo" /> <br />
+      <div>
+        <input
+          type="button"
+          id="tOne"
+          onclick="tinsert(1)"
+          class="buttonPimp"
+          value="1"
+        />
+        <input
+          type="button"
+          id="tTwo"
+          onclick="tinsert(2)"
+          class="buttonPimp"
+          value="2"
+        />
+        <input
+          type="button"
+          id="tThree"
+          onclick="tinsert(3)"
+          class="buttonPimp"
+          value="3"
+        />
+        <input
+          type="button"
+          id="tDecimalPoint"
+          onclick="tinsert('.')"
+          class="buttonPimp"
+          value="."
+        />
+        <br />
+        <input
+          type="button"
+          id="tFour"
+          onclick="tinsert(4)"
+          class="buttonPimp"
+          value="4"
+        />
+        <input
+          type="button"
+          id="tFive"
+          onclick="tinsert(5)"
+          class="buttonPimp"
+          value="5"
+        />
+        <input
+          type="button"
+          id="tSix"
+          onclick="tinsert(6)"
+          class="buttonPimp"
+          value="6"
+        />
+        <input type="reset" id="tClear" class="buttonPimp" value="C" /> <br />
+        <input
+          type="button"
+          id="tSeven"
+          onclick="tinsert(7)"
+          class="buttonPimp"
+          value="7"
+        />
+        <input
+          type="button"
+          id="tEight"
+          onclick="tinsert(8)"
+          class="buttonPimp"
+          value="8"
+        />
+        <input
+          type="button"
+          id="tNine"
+          onclick="tinsert(9)"
+          class="buttonPimp"
+          value="9"
+        />
+        <input
+          type="button"
+          id="tZero"
+          onclick="tinsert(0)"
+          class="buttonPimp"
+          value="0"
+        />
+        <br />
+        <input
+          type="button"
+          id="tEqual"
+          onclick="tSzamol()"
+          class="buttonPimp"
+          value="="
+        />
+      </div>
+      <input name="tResult" id="tResult" />
+    </form>
+    <script src="calculators.js"></script>
+  </body>
+</html>
